@@ -22,7 +22,7 @@
     position: absolute;
     height: 100vh;
     top: 0;
-    /* width: 99vw; */
+    width: 100%;
     z-index: -2;
     background-size: cover;
 }
