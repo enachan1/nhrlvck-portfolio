@@ -1,0 +1,123 @@
+.tools__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.tools__h1-cont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.tools__h1-cont h1 {
+    position: relative;
+}
+
+.tools__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 12px 12px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    width: 100%;
+    background-color: var(--clr-bg-nav);
+    border-radius: 20px;
+    border-left: 5px solid var(--clr-secondary);
+    /* transition: transform .5s ease; */
+    position: relative;
+    transform: translateY(20px);
+}
+
+.card h3 {
+    font-size: var(--step--2);
+}
+
+.card__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+}
+
+.card__images>img {
+    width: 75px;
+}
+
+
+.animate-fade {
+    animation: fade 1s ease forwards;
+}
+
+.animate-fade.card-1 {
+    animation: fade 1s .2s ease forwards;
+}
+
+.animate-fade.card-2 {
+    animation: fade 1s .4s ease forwards;
+}
+
+.animate-fade.card-3 {
+    animation: fade 1s .6s ease forwards;
+}
+.animate-fade.card-4 {
+    animation: fade 1s .8s ease forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (min-width: 475px) {
+    .card__images>img {
+        width: 85px;
+    }
+}
+
+@media (min-width: 640px) {
+    .card {
+        max-width: 500px;
+    }
+
+    .card__images>img {
+        width: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .tools__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: normal;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1288px) {}
+
+@media (min-width: 1536px) {}

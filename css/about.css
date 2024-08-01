@@ -1,0 +1,137 @@
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 36px;
+    justify-content: center;
+    margin-bottom: 3rem;
+    /* border: 1px solid red; */
+}
+
+.about__img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+.about__h1 {
+    font-size: var(--step-2);
+    position: relative;
+}
+
+.about__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about__text {
+    width: 100%;
+    padding: 16px;
+    max-width: 600px;
+}
+
+.about__text>p {
+    font-size: var(--step--3);
+    line-height: 1.6;
+}
+
+.about__pictures {
+    display: none;
+}
+
+.pict {
+    border-radius: 12px;
+    position: relative;
+}
+
+.pict>img {
+    width: 100%;
+    min-width: 400px;
+}
+
+/* animation */
+
+.anim_cont {
+    position: relative;
+    opacity: 0;
+    /* border: 1px solid red; */
+}
+
+.animate.animtitle1 {
+    animation: slide 1s .3s ease forwards;
+  }
+  
+  .fade.fadetitle1 {
+    animation: fade .9s .3s ease-out forwards;
+  }
+  
+  .animate.animdesc1 {
+    animation: slide 1s .5s ease forwards;
+  }
+  
+  .fade.fadedesc1 {
+    animation: fade .9s .5s ease-out forwards;
+  }
+  
+  .animate.animdesc2 {
+    animation: slide 1s .7s ease forwards;
+  }
+  
+  .fade.fadedesc2 {
+    animation: fade .9s .7s ease-out forwards;
+  }
+  
+  
+  .animate.animpic1 {
+    animation: slide 1s .9s ease forwards;
+  }
+  
+  .fade.fadepic1 {
+    animation: fade .9s .9s ease-out forwards;
+  }
+  
+  
+  .animate.animpic2 {
+    animation: slide 1s 1s ease forwards;
+  }
+  
+  .fade.fadepic2 {
+    animation: fade .9s 1s ease-out forwards;
+  }
+
+
+
+@media (min-width: 1068px) {
+    .about__container {
+        gap: 4rem;
+    }
+
+    .about__description {
+        flex-direction: row;
+        flex: 1;
+        gap: 3rem;
+    }
+
+    .about__pictures {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+
+@media (min-width: 475px) {}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1288px) {}
+
+@media (min-width: 1536px) {}
