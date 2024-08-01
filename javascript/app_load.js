@@ -1,5 +1,7 @@
 const app_load = () => {
-    particlesJS.load('particles-js', 'javascript/particlesjs-config.json', function() {
+  const basePath = window.location.pathname.startsWith('/nhrlvck-portfolio') ? '/nhrlvck-portfolio' : '';
+
+    particlesJS.load('particles-js', `${basePath}/particlesjs-config.json`, function() {
         console.log('callback - particles.js config loaded');
       });
 }
