@@ -111,6 +111,33 @@ body {
   transition: transform .3s ease;
 }
 
+/* Light bulb */
+.toggle-light-mode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 30px;
+  gap: .75rem;
+  right: 90px;
+  z-index: 50;
+}
+
+.line-bulb {
+  height: 50px;
+  width: 1px;
+  border: 1px solid var(--clr-secondary);
+}
+
+.toggle-light-mode .bulb {
+  background: none;
+  outline: 0;
+  border: 0;
+  color: var(--clr-secondary);
+  cursor: pointer;
+}
+
 svg {
   fill: var(--clr-secondary);
 }
