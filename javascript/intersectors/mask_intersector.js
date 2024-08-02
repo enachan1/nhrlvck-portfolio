@@ -83,9 +83,37 @@ const mask_intersector = () => {
         })
     }
 
+    const contactAnimation = () => {
+        const animate_selector = document.querySelectorAll('.contact__container');
+        const pr_fade = document.querySelectorAll(".contact-fade")
+        const pr_mask = document.querySelectorAll(".contact-mask")
+
+        const intersect = new IntersectionObserver((entries, observer) =>  {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    pr_mask.forEach(mask => {
+                        mask.classList.toggle("animate")
+                    })
+                    pr_fade.forEach(fade => {
+                        fade.classList.toggle("fade")
+                    })
+                    observer.unobserve(entry.target)
+                }
+            })
+        } , {
+            threshold: 1
+        })
+
+        animate_selector.forEach(select => {
+            intersect.observe(select)
+        })
+
+    }
+
 
     toolsAnimation();
     aboutAnimation();
     projectAnimation();
+    contactAnimation();
 }
 export default mask_intersector;
