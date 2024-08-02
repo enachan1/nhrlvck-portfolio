@@ -11,7 +11,7 @@
 }
 
 .background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.22));
+    background-image: var(--clr-background);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

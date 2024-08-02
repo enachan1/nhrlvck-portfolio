@@ -4,6 +4,8 @@
   --clr-secondary: rgb(243, 244, 246);
   --clr-bg-nav: #3b0764;
   --clr-mask: #804ea7;
+  --clr-background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.33));
+
 
   /* typoggraphy */
 
@@ -23,18 +25,16 @@
 }
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  margin: 10px 0 10px 0;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--clr-mask);
-  border-radius: 10px;
 }
 
 .light-mode {
   --clr-primary: #f3f4f6;
   --clr-secondary: #1f2937;
   --clr-bg-nav: #d8b4fe;
+  --clr-background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.66));
 }
 
 html {
@@ -197,7 +197,8 @@ svg {
   align-items: center;
   justify-content: center;
   height: 30px;
-  background-color: black;
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
   position: fixed;
   bottom: 0;
   width: 100%;

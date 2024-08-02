@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -112,9 +113,9 @@
         <br>
         <a href="#" class="button">Download CV</a>
       </div>
-      </div>
-    </header>
- 
+  </div>
+  </header>
+
   <!-- Main Content -->
 
   <main>
@@ -126,7 +127,8 @@
       <div class="about__description">
         <div class="about__text">
           <p style="position: relative;">
-            <span class="anim_cont about-anim_cont fadedesc1">My name is <strong>Nhorlvick Mangampo</strong>, a BS Information
+            <span class="anim_cont about-anim_cont fadedesc1">My name is <strong>Nhorlvick Mangampo</strong>, a BS
+              Information
               Technology alumni in <strong>STI College
                 Meycauayan</strong> that aims to become a web developer. Though, i have experiences to various
               programming
@@ -227,7 +229,19 @@
       <div class="project__card__container">
 
         <div class="projects__card">
-          <img src="/test.png" alt="" srcset="">
+          <div class="projects__image__container">
+            <img src="/test.png" class="select-me" alt="" srcset="">
+            <span class="swiper__viewer"><button class="preview__btn"
+                data-images='["/juncathy1.png", "/juncathy2.png", "/juncathy3.png"]'><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                  <path d="M8.25 10.875a2.625 2.625 0 1 1 5.25 0 2.625 2.625 0 0 1-5.25 0Z" />
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.125 4.5a4.125 4.125 0 1 0 2.338 7.524l2.007 2.006a.75.75 0 1 0 1.06-1.06l-2.006-2.007a4.125 4.125 0 0 0-3.399-6.463Z"
+                    clip-rule="evenodd" />
+                </svg>
+
+              </button></span>
+          </div>
           <div class="project__desc">
             <h3>TRAXUSE: A Web Based Point of Sale and Inventory Management System</h3>
             <p>This is our capstone project fulfilling the requirements for Bachelor of Science in Information
@@ -239,7 +253,18 @@
         </div>
 
         <div class="projects__card">
-          <img src="/enroll.png" alt="" srcset="">
+          <div class="projects__image__container">
+            <img src="/enroll.png" class="select-me" alt="" srcset="">
+            <span class="swiper__viewer"><button class="preview__btn"
+                data-images='["/enroll1.png","/enroll2.png","/enroll3.png"]'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                  <path d="M8.25 10.875a2.625 2.625 0 1 1 5.25 0 2.625 2.625 0 0 1-5.25 0Z" />
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.125 4.5a4.125 4.125 0 1 0 2.338 7.524l2.007 2.006a.75.75 0 1 0 1.06-1.06l-2.006-2.007a4.125 4.125 0 0 0-3.399-6.463Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button></span>
+          </div>
           <div class="project__desc">
             <h3>Simple Enrollment System</h3>
             <p>The Enrollment System was our final project for the 3rd Year 1st Semester. We worked on this system for
@@ -252,9 +277,20 @@
         </div>
 
         <div class="projects__card">
-          <img src="/juncathy.png" alt="" srcset="">
+          <div class="projects__image__container">
+                <img src="/enroll.png" class="select-me" alt="" srcset="">
+                <span class="swiper__viewer"><button class="preview__btn"
+                  data-images='["/enroll1.png","/enroll2.png","/enroll3.png"]'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                  <path d="M8.25 10.875a2.625 2.625 0 1 1 5.25 0 2.625 2.625 0 0 1-5.25 0Z" />
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.125 4.5a4.125 4.125 0 1 0 2.338 7.524l2.007 2.006a.75.75 0 1 0 1.06-1.06l-2.006-2.007a4.125 4.125 0 0 0-3.399-6.463Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button></span>
+          </div>
           <div class="project__desc">
-            <h3>Portfolio Website</h3>
+            <h3>Old Portfolio Website</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, iure molestias natus qui voluptatum iusto
               quasi error odit mollitia sequi rerum numquam incidunt. Numquam aspernatur neque qui illum consectetur
               obcaecati!</p>
@@ -268,12 +304,10 @@
       <div class="contact__h1">
         <h1>Contact</h1>
       </div>
-
+      <div class="contact__image__container">
+        <img src="/message.png" alt="messageCamp" srcset="">
+      </div>
       <div class="contact__info">
-        <div class="image__container">
-          <img src="/1grass.gif" alt="" srcset="">
-        </div>
-
         <div class="contact__desc">
           <p>
             <span>Whether you have questions, get to business with me or just want to say hi, you can contact me through
@@ -287,12 +321,46 @@
     </section>
 
   </main>
+  <section class="swipers fade-show">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <!-- <div class="swiper-slide"><img src="/juncathy1.png" alt="" srcset="" loading="lazy">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide"><img src="/juncathy2.png" loading="lazy" alt="" srcset="">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide"><img src="/juncathy3.png" loading="lazy" alt="" srcset="">
+          <div class="swiper-lazy-preloader"></div>
+          </div> -->
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+      <button class="xbtn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" width="25" height="25">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </section>
 
   <footer class="footer">
     <p>Work in Progress</p>
   </footer>
   <script type="module" src="/javascript/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
