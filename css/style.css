@@ -157,7 +157,7 @@ svg {
 }
 
 .fade {
-  animation: fade .9s ease-out forwards;
+  animation: fade .69s ease-in forwards;
 }
 
 @keyframes slide {

@@ -85,8 +85,8 @@ const mask_intersector = () => {
 
     const contactAnimation = () => {
         const animate_selector = document.querySelectorAll('.contact__container');
-        const pr_fade = document.querySelectorAll(".cont-fade")
-        const pr_mask = document.querySelectorAll(".cont-mask")
+        const pr_fade = document.querySelectorAll(".contact-fade")
+        const pr_mask = document.querySelectorAll(".contact-mask")
 
         const intersect = new IntersectionObserver((entries, observer) =>  {
             entries.forEach(entry => {
@@ -114,6 +114,6 @@ const mask_intersector = () => {
     toolsAnimation();
     aboutAnimation();
     projectAnimation();
-    contactAnimation()
+    contactAnimation();
 }
 export default mask_intersector;

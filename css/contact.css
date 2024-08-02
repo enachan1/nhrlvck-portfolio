@@ -27,9 +27,10 @@
     text-align: center;
     max-width: 500px;
     padding: 12px;
+    position: relative;
 }
 
-.contact__desc > p {
+.contact__p {
     font-size: var(--step--3);
     line-height: 1.6;
 }
@@ -52,6 +53,32 @@
 .contact-msg-img {
     width: 100%;
     max-width: 650px;
+}
+.contact__span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fade.contact-fade1 {
+    animation: fade .69s .3s ease-in forwards;
+}
+.animate.contact-mask1 {
+    animation: slide 1s .3s ease forwards;
+}
+
+.fade.contact-fade2 {
+    animation: fade .69s .5s ease-in forwards;
+}
+.animate.contact-mask2 {
+    animation: slide 1s .5s ease forwards;
+}
+
+.fade.contact-fade3 {
+    animation: fade .69s .7s ease-in forwards;
+}
+.animate.contact-mask3 {
+    animation: slide 1s .7s ease forwards;
 }
 @media (min-width: 475px) {}
 
