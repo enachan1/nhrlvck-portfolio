@@ -8,6 +8,8 @@ const fade_intersector = () => {
                 observer.unobserve(entry.target)
             }
         })
+    }, {
+        threshold: 1
     })
 
     fade_selector.forEach(anim => {

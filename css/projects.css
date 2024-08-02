@@ -11,9 +11,10 @@
     margin-bottom: 2rem;
 }
 
-.projects__h1-cont > h1 {
+.projects__h1-cont>h1 {
     position: relative;
 }
+
 /* Main card container */
 .project__card__container {
     display: flex;
@@ -24,6 +25,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
 /* Container of each card */
 .projects__card {
     display: flex;
@@ -49,21 +51,75 @@
     text-align: center;
 }
 
-.projects__card>img {
+.projects__image__container {
+    display: flex;
+    align-items: center;
+    /* border: 5px solid red; */
+    height: 100%;
     width: 100%;
     position: relative;
+}
+
+
+.projects__image__container>img {
+    display: block;
+    width: 100%;
+}
+
+.swiper__viewer {
+    content: '';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 0;
+    transition: height .5s ease;
+}
+
+.projects__image__container:hover .swiper__viewer {
+    height: 50%;
+    transition: height .5s ease;
 }
 
 .project__desc>h3 {
     font-size: 1rem;
 }
+
 .project__desc>p {
     font-size: var(--step--3);
 }
 
+.preview__btn {
+    background: none;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+}
+
+
 /* Animations */
 .scale__animation {
     animation: scaleMe 1s .5s ease forwards;
+}
+
+.hover__animation {
+    animation: hovers .5s ease forwards;
+}
+
+
+@keyframes hovers {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
 }
 
 
@@ -85,7 +141,7 @@
         max-width: 505px;
     }
 
-    .projects__card>img {
+    .projects__image__container>img {
         max-width: 505px;
     }
 }
@@ -95,13 +151,16 @@
 @media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
-    .projects__card>img {
+    .projects__image__container>img {
         width: 100%;
     }
+
     .project__desc>h3 {
         font-size: var(--step--2);
     }
+
     
+
 }
 
 @media (min-width: 1288px) {
@@ -119,10 +178,15 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .projects__card>img {
+
+    .projects__image__container {
+        width: initial;
+    }
+
+    .projects__image__container>img {
         max-width: 350px;
     }
-    
+
     .projects__card {
         max-width: none;
     }
