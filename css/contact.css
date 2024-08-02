@@ -4,7 +4,9 @@
     margin-bottom: 5rem;
 }
 .contact__h1 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 2rem;
 }
 
@@ -41,27 +43,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     margin-bottom: 2rem;
 }
-.contact__image__container > img {
-    width: inherit;
-    max-width: 700px;
-    margin-left: 20px;
-    margin-right: 20px;
+.contact__image__child__cont {
+    position: relative;
+}
+
+.contact-msg-img {
+    width: 100%;
+    max-width: 650px;
 }
 @media (min-width: 475px) {}
 
 @media (min-width: 640px) {}
 
 @media (min-width: 768px) {
-    .image__container > img {
+    .contact-msg > img {
         max-width: 400px;
     }
 }
 
 @media (min-width: 1024px) {
-
     .contact__desc {
         margin: 0 auto;
     }
