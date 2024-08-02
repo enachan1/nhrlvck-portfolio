@@ -15,6 +15,7 @@ import fade_intersector from "./intersectors/fade_intersector";
 import scale_intersector from "./intersectors/scale_intersector";
 import app from "./app_load"
 import swiper from "./swiper"
+import light_mode from "./light_mode";
 
 
 navigation();
@@ -23,5 +24,6 @@ fade_intersector();
 scale_intersector();
 app();
 swiper();
+light_mode();
 
 
