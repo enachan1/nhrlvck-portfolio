@@ -8,10 +8,35 @@ const swiper = () => {
   const fadeSelector = document.querySelector(".fade-show");
   const closeBtn = document.querySelector(".xbtn");
 
+  const start_swiper = () => {
+    new Swiper('.swiper', {
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+
+      hideOnClick: {
+        el: '.xbtn'
+      }
+    });
+  }
+
 
   const closeSlides = () => {
     isOpen = !isOpen
-    if(isOpen === false) {
+    if (isOpen === false) {
       imageArray = []
       swiper_container.style.display = 'none'
       fadeSelector.classList.toggle("swipers__anim__show")
@@ -19,49 +44,29 @@ const swiper = () => {
     }
   }
 
-  const swiper = new Swiper('.swiper', {
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-
-    hideOnClick: {
-      el: '.xbtn'
-    }
-  });
-
   //events
 
   btns.forEach(btn => {
     btn.addEventListener("click", () => {
       isOpen = !isOpen
-  
+
       if (isOpen) {
         imageArray = JSON.parse(btn.getAttribute('data-images'))
         swiper_container.style.display = 'flex'
         fadeSelector.classList.toggle("swipers__anim__show")
-  
-        for(let i = 0; i<imageArray.length; i++) {
+
+        for (let i = 0; i < imageArray.length; i++) {
           swipe_wrap.innerHTML += `<div class="swiper-slide">
           <img src="${window_url}${imageArray[i]}" alt="${imageArray[i]}" srcset="" loading="lazy">
           <div class="swiper-lazy-preloader"></div>
-        </div>`
+        </div>
+        `
         }
       }
+      start_swiper()
     })
   })
   closeBtn.addEventListener("click", closeSlides)
+  start_swiper()
 }
 export default swiper;

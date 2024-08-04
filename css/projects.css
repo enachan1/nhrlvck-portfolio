@@ -95,6 +95,15 @@
     font-size: var(--step--3);
 }
 
+.project__lnk {
+    color: var(--clr-secondary);
+    text-decoration: none;
+    position: relative;
+}
+.project__lnk:hover {
+    text-decoration: underline;
+}
+
 .preview__btn {
     background: none;
     outline: 0;
