@@ -83,13 +83,32 @@
     color: none;
 }
 
+.nav-logo {
+    width: 75%;
+    max-width: 720px;
+    min-width: 320px;
+    padding: 0;
+}
+
+.nav-logo__img {
+    width: 100%;
+}
+
 @media (min-width: 475px) {}
 
 @media (min-width: 640px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .nav-logo {
+        width: 70%; 
+    }
+}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .nav-logo {
+        width: 60%; 
+    }
+}
 
 @media (min-width: 1288px) {
     .navigation-bar {
