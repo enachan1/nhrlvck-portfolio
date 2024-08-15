@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .navigation-container {
@@ -84,8 +84,8 @@
 }
 
 .nav-logo {
-    width: 75%;
-    max-width: 720px;
+    width: 100%;
+    max-width: 400px;
     min-width: 320px;
     padding: 0;
 }
@@ -96,19 +96,19 @@
 
 @media (min-width: 475px) {}
 
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+    .navigation-container>ul {
+        gap: 4rem;
+    }
+}
 
 @media (min-width: 768px) {
     .nav-logo {
-        width: 70%; 
+        max-width: 430px;
     }
 }
 
-@media (min-width: 1024px) {
-    .nav-logo {
-        width: 60%; 
-    }
-}
+@media (min-width: 1024px) {}
 
 @media (min-width: 1288px) {
     .navigation-bar {
