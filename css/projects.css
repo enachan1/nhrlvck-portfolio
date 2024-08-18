@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .projects__h1-cont {
@@ -151,16 +153,17 @@
 
 
 @media (min-width: 475px) {
+}
+
+@media (min-width: 640px) {
     .projects__card {
-        max-width: 505px;
+        max-width: 450px;
     }
 
     .projects__image__container>img {
-        max-width: 505px;
+        max-width: 450px;
     }
 }
-
-@media (min-width: 640px) {}
 
 @media (min-width: 768px) {}
 
