@@ -165,7 +165,15 @@
     }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .projects__card {
+        max-width: 505px;
+    }
+
+    .projects__image__container>img {
+        max-width: 505px;
+    }
+}
 
 @media (min-width: 1024px) {
     .projects__image__container>img {
@@ -179,7 +187,7 @@
     }
 
     .project__desc>h3 {
-        font-size: var(--step--2);
+        font-size: var(--step--3);
     }
     
     .projects__card {
@@ -224,6 +232,9 @@
     .project__desc {
         max-width: 700px;
         margin-inline: auto;
+    }
+    .project__desc>h3 {
+        font-size: var(--step--2);
     }
 }
 
